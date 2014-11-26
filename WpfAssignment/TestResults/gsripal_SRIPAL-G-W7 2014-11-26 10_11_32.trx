@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b3ac418f-cadb-49d5-825e-1a7714ea1c68" name="gsripal@SRIPAL-G-W7 2014-11-26 10:11:32" runUser="CORPORATE\gsripal" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="254e4c12-8a4e-4f54-8391-25b3cfea1562">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gsripal_SRIPAL-G-W7 2014-11-26 10_11_32">
+      <DeploymentItem filename="c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\WpfAssignment\bin\Debug\WpfAssignment.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-26T10:11:32.7934618-05:00" queuing="2014-11-26T10:11:32.8664659-05:00" start="2014-11-26T10:11:32.9064682-05:00" finish="2014-11-26T10:12:01.0310769-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="SRIPAL-G-W7" outcome="Warning" timestamp="2014-11-26T10:11:32.8664659-05:00">
+        <Text>Deployment is currently disabled. The deployment item 'WpfAssignment.exe' on test 'UnitTests.PersonListViewModelTest.EditClickedHandlerTest' was not deployed.</Text>
+      </RunInfo>
+      <RunInfo computerName="SRIPAL-G-W7" outcome="Error" timestamp="2014-11-26T10:12:00.9560726-05:00">
+        <Text>One of the background threads threw exception: 
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.Windows.Input.TextServicesContext.StopTransitoryExtension()
+   at System.Windows.Input.TextServicesContext.Uninitialize(Boolean appDomainShutdown)
+   at System.Windows.Input.TextServicesContext.TextServicesContextShutDownListener.OnShutDown(Object target, Object sender, EventArgs e)
+   at MS.Internal.ShutDownListener.HandleShutDown(Object sender, EventArgs e)</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="EditClickedHandlerTest" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="ad84a91b-9741-7045-7d50-305867b1270c">
+      <DeploymentItems>
+        <DeploymentItem filename="WpfAssignment.exe" />
+      </DeploymentItems>
+      <Execution id="bf288956-787c-483f-9093-7186942d2c9c" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonListViewModelTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditClickedHandlerTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ad84a91b-9741-7045-7d50-305867b1270c" executionId="aecc77db-4dae-456f-ab5d-66ed566e9a7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="aecc77db-4dae-456f-ab5d-66ed566e9a7a" testId="ad84a91b-9741-7045-7d50-305867b1270c" testName="EditClickedHandlerTest" computerName="SRIPAL-G-W7" duration="00:00:22.1862690" startTime="2014-11-26T10:11:32.9204690-05:00" endTime="2014-11-26T10:11:55.1067380-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aecc77db-4dae-456f-ab5d-66ed566e9a7a">
+      <Output>
+        <ErrorInfo>
+          <Message>User aborted test run.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

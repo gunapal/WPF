@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6394c24c-3807-4391-b569-af3eb57056f2" name="gsripal@SRIPAL-G-W7 2014-11-26 10:25:20" runUser="CORPORATE\gsripal" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="254e4c12-8a4e-4f54-8391-25b3cfea1562">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gsripal_SRIPAL-G-W7 2014-11-26 10_25_20">
+      <DeploymentItem filename="c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\WpfAssignment\bin\Debug\WpfAssignment.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-26T10:25:20.8228223-05:00" queuing="2014-11-26T10:25:20.9258282-05:00" start="2014-11-26T10:25:20.8228223-05:00" finish="2014-11-26T10:25:20.9478295-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="SRIPAL-G-W7" outcome="Warning" timestamp="2014-11-26T10:25:20.9258282-05:00">
+        <Text>Deployment is currently disabled. The deployment item 'WpfAssignment.exe' on test 'UnitTests.PersonListViewModelTest.PopulateDefaultPersonListTest' was not deployed.</Text>
+      </RunInfo>
+      <RunInfo computerName="SRIPAL-G-W7" outcome="Error" timestamp="2014-11-26T10:25:20.9478295-05:00">
+        <Text>Failed to queue test run 'gsripal@SRIPAL-G-W7 2014-11-26 10:25:20': Test run 'gsripal@SRIPAL-G-W7 2014-11-26 10:25:20' could not be executed. No agents are marked online to execute test run.</Text>
+        <Exception>Microsoft.VisualStudio.TestTools.Exceptions.RigExecutionException: Test run 'gsripal@SRIPAL-G-W7 2014-11-26 10:25:20' could not be executed. No agents are marked online to execute test run.
+   at Microsoft.VisualStudio.TestTools.Controller.ControllerObject.QueueTestRun(TestRun testRun, FileCopyService fileCopyService, IControllerEvents eventHandler)
+   at Microsoft.VisualStudio.TestTools.TestManagement.ControllerProxy.QueueTestRunWorker(Object state)</Exception>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="PopulateDefaultPersonListTest" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="866688d4-5770-6f22-26d0-712df3eec5b0">
+      <DeploymentItems>
+        <DeploymentItem filename="WpfAssignment.exe" />
+      </DeploymentItems>
+      <Execution id="94230220-1fba-4928-bdb2-e5f29203b5f3" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonListViewModelTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PopulateDefaultPersonListTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="866688d4-5770-6f22-26d0-712df3eec5b0" executionId="94230220-1fba-4928-bdb2-e5f29203b5f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="94230220-1fba-4928-bdb2-e5f29203b5f3" testId="866688d4-5770-6f22-26d0-712df3eec5b0" testName="PopulateDefaultPersonListTest" computerName="SRIPAL-G-W7" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94230220-1fba-4928-bdb2-e5f29203b5f3">
+    </UnitTestResult>
+  </Results>
+</TestRun>

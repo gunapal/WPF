@@ -1,0 +1,106 @@
+﻿<Window x:Class="WpfAssignment.View.EditPersonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:customBehavior="clr-namespace:WpfAssignment.Behaviors"
+        xmlns:validations="clr-namespace:WpfAssignment.Validations"
+        Title="EditPersonWindow" Height="350" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="75"/>
+            <RowDefinition MaxHeight="75"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="Margin" Value="0,0,20,0"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="MaxHeight" Value="40"/>
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Margin" Value="20,0,0,0"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="MaxHeight" Value="40"/>
+                <Setter Property="Width" Value="250"/>
+                <Setter Property="TextAlignment" Value="Left"/>
+            </Style>
+        </Grid.Resources>
+        <Label 
+            Name="uxNameLbl"
+            Content="Name"
+            Grid.Row="0"
+            Grid.Column="0"
+            />
+        <TextBox 
+            Name="uxNameTxt"
+            Grid.Row="0"
+            Grid.Column="1">
+            <TextBox.Text>
+                <Binding Path="PersonSelected.FullName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <validations:NameValidation ValidationStep="RawProposedValue"/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            <Validation.ErrorTemplate>
+                <ControlTemplate>
+                    <StackPanel>
+                        <AdornedElementPlaceholder x:Name="textBox"/>
+                        <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red"/>
+                    </StackPanel>
+                </ControlTemplate>
+            </Validation.ErrorTemplate>
+                
+        </TextBox>
+        <Label 
+            Name="uxAgeLbl"
+            Grid.Row="1"
+            Grid.Column="0"
+            Content="Age"
+            />
+        <TextBox
+            Name="uxAgeTxt"
+            Grid.Row="1"
+            Grid.Column="1">
+            <TextBox.Text>
+                <Binding Path="PersonSelected.Age" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <validations:AgeValidation ValidationStep="RawProposedValue"/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+            <Validation.ErrorTemplate>
+                <ControlTemplate>
+                    <StackPanel>
+                        <AdornedElementPlaceholder x:Name="textBox"/>
+                        <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red"/>
+                    </StackPanel>
+                </ControlTemplate>
+            </Validation.ErrorTemplate>
+        </TextBox>
+        <!-- Save / Cancel buttons-->
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <Button
+                Name="uxSave"
+                Width="75"
+                Height="25"
+                Margin="0,0,20,0"
+                Content="Save"
+                HorizontalAlignment="Center"
+                customBehavior:ButtonBehavior.ButtonClickedCommand="{Binding SaveCommand}"
+                />
+            
+            <Button
+                Name="uxCancel"
+                Width="75"
+                Height="25"
+                Margin="20,0,0,0"
+                Content="Cancel" customBehavior:ButtonBehavior.ButtonClickedCommand="{Binding CancelCommand}"
+                />
+        </StackPanel>
+    </Grid>
+</Window>

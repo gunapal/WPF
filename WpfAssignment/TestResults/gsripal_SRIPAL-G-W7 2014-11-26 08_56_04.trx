@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="248c4397-bc1a-40b0-9531-3a2c543fed89" name="gsripal@SRIPAL-G-W7 2014-11-26 08:56:04" runUser="CORPORATE\gsripal" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="254e4c12-8a4e-4f54-8391-25b3cfea1562">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gsripal_SRIPAL-G-W7 2014-11-26 08_56_04">
+      <DeploymentItem filename="c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\WpfAssignment\bin\Debug\WpfAssignment.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-26T08:56:04.4684564-05:00" queuing="2014-11-26T08:56:06.8495926-05:00" start="2014-11-26T08:56:06.9876005-05:00" finish="2014-11-26T08:56:45.6318108-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="SRIPAL-G-W7" outcome="Error" timestamp="2014-11-26T08:56:45.6308107-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AgeValdation_InvalidInput_FailedValidation" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="827e686d-200e-c939-f28c-365d7e5bb026">
+      <Execution id="06438122-361d-44c9-b7fc-65340b840a21" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ValidationTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AgeValdation_InvalidInput_FailedValidation" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="827e686d-200e-c939-f28c-365d7e5bb026" executionId="06438122-361d-44c9-b7fc-65340b840a21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="06438122-361d-44c9-b7fc-65340b840a21" testId="827e686d-200e-c939-f28c-365d7e5bb026" testName="AgeValdation_InvalidInput_FailedValidation" computerName="SRIPAL-G-W7" duration="00:00:38.4982020" startTime="2014-11-26T08:56:07.1336088-05:00" endTime="2014-11-26T08:56:45.6318108-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06438122-361d-44c9-b7fc-65340b840a21">
+    </UnitTestResult>
+  </Results>
+</TestRun>

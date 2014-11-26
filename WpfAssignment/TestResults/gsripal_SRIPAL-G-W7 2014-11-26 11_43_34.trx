@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="92a78db7-1841-401e-8111-81f9bc6b32aa" name="gsripal@SRIPAL-G-W7 2014-11-26 11:43:34" runUser="CORPORATE\gsripal" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="254e4c12-8a4e-4f54-8391-25b3cfea1562">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gsripal_SRIPAL-G-W7 2014-11-26 11_43_34">
+      <DeploymentItem filename="c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\WpfAssignment\bin\Debug\WpfAssignment.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-26T11:43:34.7402991-05:00" queuing="2014-11-26T11:43:35.0953194-05:00" start="2014-11-26T11:43:35.1183207-05:00" finish="2014-11-26T11:43:37.7974739-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="16" executed="16" passed="16" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="SRIPAL-G-W7" outcome="Error" timestamp="2014-11-26T11:43:37.7204695-05:00">
+        <Text>One of the background threads threw exception: 
+System.Runtime.InteropServices.InvalidComObjectException: COM object that has been separated from its underlying RCW cannot be used.
+   at System.Windows.Input.TextServicesContext.StopTransitoryExtension()
+   at System.Windows.Input.TextServicesContext.Uninitialize(Boolean appDomainShutdown)
+   at System.Windows.Input.TextServicesContext.TextServicesContextShutDownListener.OnShutDown(Object target, Object sender, EventArgs e)
+   at MS.Internal.ShutDownListener.HandleShutDown(Object sender, EventArgs e)</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="NameValdation_InvalidInput_FailedValidation" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="b77dd2ec-c5d8-3fb9-f639-1bb5cbd8949b">
+      <Description>Alpha numeric character input should fail name validaiton</Description>
+      <Execution id="eb219961-1af7-4f92-818f-fbc9bcd58136" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ValidationTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NameValdation_InvalidInput_FailedValidation" />
+    </UnitTest>
+    <UnitTest name="PersonListTest" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="0a7b2002-5633-2f53-1cd5-60fba099851c">
+      <Execution id="6d7512b9-a685-47a6-97c1-bec804a94c36" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonListViewModelTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonListTest" />
+    </UnitTest>
+    <UnitTest name="AgeValdation_AgeLessThanOne_FailedValidation" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="e147ae6c-ff06-2414-2818-ae694c624826">
+      <Description>Minimum age limit validation</Description>
+      <Execution id="55736379-3d85-4a1f-b74a-080ee0c699d4" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ValidationTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AgeValdation_AgeLessThanOne_FailedValidation" />
+    </UnitTest>
+    <UnitTest name="ConvertTest_PersonObject_SuccessfulConversion" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="97e22287-2d5d-d5ed-2148-2764eacc1d78">
+      <Description>Person object input, returns a string concatinating name and age.</Description>
+      <Execution id="e603bd94-6c77-4e4f-ab59-3dca74c05040" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonToStringConverterTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertTest_PersonObject_SuccessfulConversion" />
+    </UnitTest>
+    <UnitTest name="AgeValdation_InvalidInput_FailedValidation" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="827e686d-200e-c939-f28c-365d7e5bb026">
+      <Description>Alpha numeric character input should fail age validaiton</Description>
+      <Execution id="ba97bd50-8da6-4a43-a96f-2f23f98e4824" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ValidationTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AgeValdation_InvalidInput_FailedValidation" />
+    </UnitTest>
+    <UnitTest name="NameValdation_ValidName_SuccessfulValidation" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="6b21f504-9c86-9756-a0d5-ef044d8fbff4">
+      <Description>Valid input , succesful validation</Description>
+      <Execution id="f87ec200-aa7e-4494-88fb-8c1360b34b65" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ValidationTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NameValdation_ValidName_SuccessfulValidation" />
+    </UnitTest>
+    <UnitTest name="NameValdation_SpeicalCharacterInName_FailedValidation" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="f0cdec3f-cbf5-ecc5-80e7-b70c46cd9255">
+      <Description>Name contains special characters, should fail validation</Description>
+      <Execution id="691bab2f-ec3f-4022-8f4c-f2dc6044fc47" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ValidationTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NameValdation_SpeicalCharacterInName_FailedValidation" />
+    </UnitTest>
+    <UnitTest name="InitializeViewModelTest" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="8e0f7e3a-4749-7100-0e6e-03bce555a5ef">
+      <Execution id="471aa9f5-eb51-459d-b203-28f4f2a76123" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonListViewModelTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitializeViewModelTest" />
+    </UnitTest>
+    <UnitTest name="PersonListViewModelConstructorTest" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="a81ae60f-a68b-b4f4-6f26-5ed7381f35af">
+      <Execution id="b7fb87b4-54f0-469c-84f3-84545a9d6552" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonListViewModelTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonListViewModelConstructorTest" />
+    </UnitTest>
+    <UnitTest name="NameValdation_EmptyName_FailedValidation" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="9a21d041-9e3c-36b4-623e-72c39d1845a5">
+      <Description>Empty string should fail name validaiton</Description>
+      <Execution id="f9a22ebf-0873-487e-bac3-293d4661507e" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ValidationTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NameValdation_EmptyName_FailedValidation" />
+    </UnitTest>
+    <UnitTest name="PersonToStringConverterConstructorTest" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="620291c7-78ee-8e74-416b-74c59b2162d4">
+      <Execution id="db6189ae-7c1f-4dd6-81ca-5abdb3e639d0" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonToStringConverterTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonToStringConverterConstructorTest" />
+    </UnitTest>
+    <UnitTest name="EditClickedHandlerTest" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="ad84a91b-9741-7045-7d50-305867b1270c">
+      <DeploymentItems>
+        <DeploymentItem filename="WpfAssignment.exe" />
+      </DeploymentItems>
+      <Execution id="91a79ba3-7d00-4409-8236-3f9e680d39b9" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonListViewModelTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EditClickedHandlerTest" />
+    </UnitTest>
+    <UnitTest name="AgeValdation_ValidLimit_SuccessfulValdation" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="3b9735b4-0fb5-ed5d-19e9-ed6cdbcf6805">
+      <Description>Valid input</Description>
+      <Execution id="d583582c-9d9d-4cb0-86e5-de97ac1d7aa8" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ValidationTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AgeValdation_ValidLimit_SuccessfulValdation" />
+    </UnitTest>
+    <UnitTest name="PopulateDefaultPersonListTest" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="866688d4-5770-6f22-26d0-712df3eec5b0">
+      <DeploymentItems>
+        <DeploymentItem filename="WpfAssignment.exe" />
+      </DeploymentItems>
+      <Execution id="209969a8-6b5a-4847-9ad0-b36dabc1ed85" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonListViewModelTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PopulateDefaultPersonListTest" />
+    </UnitTest>
+    <UnitTest name="AgeValdation_AgeMoreThan99_FailedValidation" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="d76bd686-988b-19e4-acc2-8ef46af1c39c">
+      <Description>Maximum age limit validation</Description>
+      <Execution id="59d4d39c-824d-4c33-9dc2-08efb5a38f95" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.ValidationTests, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AgeValdation_AgeMoreThan99_FailedValidation" />
+    </UnitTest>
+    <UnitTest name="ConvertTest_NullInput_EmptyString" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="3d1d830b-9007-d680-a1d0-9c6683fccf85">
+      <Description>Person object null, should return empty string</Description>
+      <Execution id="0fdcd3cc-f4a6-4849-a45d-ff672039a4ce" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonToStringConverterTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertTest_NullInput_EmptyString" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e147ae6c-ff06-2414-2818-ae694c624826" executionId="55736379-3d85-4a1f-b74a-080ee0c699d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d76bd686-988b-19e4-acc2-8ef46af1c39c" executionId="59d4d39c-824d-4c33-9dc2-08efb5a38f95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="827e686d-200e-c939-f28c-365d7e5bb026" executionId="ba97bd50-8da6-4a43-a96f-2f23f98e4824" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b9735b4-0fb5-ed5d-19e9-ed6cdbcf6805" executionId="d583582c-9d9d-4cb0-86e5-de97ac1d7aa8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d1d830b-9007-d680-a1d0-9c6683fccf85" executionId="0fdcd3cc-f4a6-4849-a45d-ff672039a4ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97e22287-2d5d-d5ed-2148-2764eacc1d78" executionId="e603bd94-6c77-4e4f-ab59-3dca74c05040" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad84a91b-9741-7045-7d50-305867b1270c" executionId="91a79ba3-7d00-4409-8236-3f9e680d39b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e0f7e3a-4749-7100-0e6e-03bce555a5ef" executionId="471aa9f5-eb51-459d-b203-28f4f2a76123" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a21d041-9e3c-36b4-623e-72c39d1845a5" executionId="f9a22ebf-0873-487e-bac3-293d4661507e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b77dd2ec-c5d8-3fb9-f639-1bb5cbd8949b" executionId="eb219961-1af7-4f92-818f-fbc9bcd58136" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0cdec3f-cbf5-ecc5-80e7-b70c46cd9255" executionId="691bab2f-ec3f-4022-8f4c-f2dc6044fc47" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6b21f504-9c86-9756-a0d5-ef044d8fbff4" executionId="f87ec200-aa7e-4494-88fb-8c1360b34b65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a7b2002-5633-2f53-1cd5-60fba099851c" executionId="6d7512b9-a685-47a6-97c1-bec804a94c36" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a81ae60f-a68b-b4f4-6f26-5ed7381f35af" executionId="b7fb87b4-54f0-469c-84f3-84545a9d6552" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="620291c7-78ee-8e74-416b-74c59b2162d4" executionId="db6189ae-7c1f-4dd6-81ca-5abdb3e639d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="866688d4-5770-6f22-26d0-712df3eec5b0" executionId="209969a8-6b5a-4847-9ad0-b36dabc1ed85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="55736379-3d85-4a1f-b74a-080ee0c699d4" testId="e147ae6c-ff06-2414-2818-ae694c624826" testName="AgeValdation_AgeLessThanOne_FailedValidation" computerName="SRIPAL-G-W7" duration="00:00:00.0207957" startTime="2014-11-26T11:43:35.1273212-05:00" endTime="2014-11-26T11:43:35.4303385-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55736379-3d85-4a1f-b74a-080ee0c699d4">
+    </UnitTestResult>
+    <UnitTestResult executionId="59d4d39c-824d-4c33-9dc2-08efb5a38f95" testId="d76bd686-988b-19e4-acc2-8ef46af1c39c" testName="AgeValdation_AgeMoreThan99_FailedValidation" computerName="SRIPAL-G-W7" duration="00:00:00.0002653" startTime="2014-11-26T11:43:35.4333387-05:00" endTime="2014-11-26T11:43:35.4353388-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59d4d39c-824d-4c33-9dc2-08efb5a38f95">
+    </UnitTestResult>
+    <UnitTestResult executionId="ba97bd50-8da6-4a43-a96f-2f23f98e4824" testId="827e686d-200e-c939-f28c-365d7e5bb026" testName="AgeValdation_InvalidInput_FailedValidation" computerName="SRIPAL-G-W7" duration="00:00:00.0002527" startTime="2014-11-26T11:43:35.4373389-05:00" endTime="2014-11-26T11:43:35.4403391-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba97bd50-8da6-4a43-a96f-2f23f98e4824">
+    </UnitTestResult>
+    <UnitTestResult executionId="d583582c-9d9d-4cb0-86e5-de97ac1d7aa8" testId="3b9735b4-0fb5-ed5d-19e9-ed6cdbcf6805" testName="AgeValdation_ValidLimit_SuccessfulValdation" computerName="SRIPAL-G-W7" duration="00:00:00.0001942" startTime="2014-11-26T11:43:35.4423392-05:00" endTime="2014-11-26T11:43:35.4443393-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d583582c-9d9d-4cb0-86e5-de97ac1d7aa8">
+    </UnitTestResult>
+    <UnitTestResult executionId="0fdcd3cc-f4a6-4849-a45d-ff672039a4ce" testId="3d1d830b-9007-d680-a1d0-9c6683fccf85" testName="ConvertTest_NullInput_EmptyString" computerName="SRIPAL-G-W7" duration="00:00:00.0005329" startTime="2014-11-26T11:43:35.4463394-05:00" endTime="2014-11-26T11:43:35.4493396-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0fdcd3cc-f4a6-4849-a45d-ff672039a4ce">
+    </UnitTestResult>
+    <UnitTestResult executionId="e603bd94-6c77-4e4f-ab59-3dca74c05040" testId="97e22287-2d5d-d5ed-2148-2764eacc1d78" testName="ConvertTest_PersonObject_SuccessfulConversion" computerName="SRIPAL-G-W7" duration="00:00:00.0005644" startTime="2014-11-26T11:43:35.4503397-05:00" endTime="2014-11-26T11:43:35.4533398-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e603bd94-6c77-4e4f-ab59-3dca74c05040">
+    </UnitTestResult>
+    <UnitTestResult executionId="91a79ba3-7d00-4409-8236-3f9e680d39b9" testId="ad84a91b-9741-7045-7d50-305867b1270c" testName="EditClickedHandlerTest" computerName="SRIPAL-G-W7" duration="00:00:02.1492338" startTime="2014-11-26T11:43:35.4553400-05:00" endTime="2014-11-26T11:43:37.6064630-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91a79ba3-7d00-4409-8236-3f9e680d39b9">
+    </UnitTestResult>
+    <UnitTestResult executionId="471aa9f5-eb51-459d-b203-28f4f2a76123" testId="8e0f7e3a-4749-7100-0e6e-03bce555a5ef" testName="InitializeViewModelTest" computerName="SRIPAL-G-W7" duration="00:00:00.0003744" startTime="2014-11-26T11:43:37.6134634-05:00" endTime="2014-11-26T11:43:37.6294643-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="471aa9f5-eb51-459d-b203-28f4f2a76123">
+    </UnitTestResult>
+    <UnitTestResult executionId="f9a22ebf-0873-487e-bac3-293d4661507e" testId="9a21d041-9e3c-36b4-623e-72c39d1845a5" testName="NameValdation_EmptyName_FailedValidation" computerName="SRIPAL-G-W7" duration="00:00:00.0026350" startTime="2014-11-26T11:43:37.6414650-05:00" endTime="2014-11-26T11:43:37.6464653-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9a22ebf-0873-487e-bac3-293d4661507e">
+    </UnitTestResult>
+    <UnitTestResult executionId="eb219961-1af7-4f92-818f-fbc9bcd58136" testId="b77dd2ec-c5d8-3fb9-f639-1bb5cbd8949b" testName="NameValdation_InvalidInput_FailedValidation" computerName="SRIPAL-G-W7" duration="00:00:00.0017881" startTime="2014-11-26T11:43:37.6504655-05:00" endTime="2014-11-26T11:43:37.6554658-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb219961-1af7-4f92-818f-fbc9bcd58136">
+    </UnitTestResult>
+    <UnitTestResult executionId="691bab2f-ec3f-4022-8f4c-f2dc6044fc47" testId="f0cdec3f-cbf5-ecc5-80e7-b70c46cd9255" testName="NameValdation_SpeicalCharacterInName_FailedValidation" computerName="SRIPAL-G-W7" duration="00:00:00.0017888" startTime="2014-11-26T11:43:37.6584660-05:00" endTime="2014-11-26T11:43:37.6624662-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="691bab2f-ec3f-4022-8f4c-f2dc6044fc47">
+    </UnitTestResult>
+    <UnitTestResult executionId="f87ec200-aa7e-4494-88fb-8c1360b34b65" testId="6b21f504-9c86-9756-a0d5-ef044d8fbff4" testName="NameValdation_ValidName_SuccessfulValidation" computerName="SRIPAL-G-W7" duration="00:00:00.0017178" startTime="2014-11-26T11:43:37.6644663-05:00" endTime="2014-11-26T11:43:37.6714667-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f87ec200-aa7e-4494-88fb-8c1360b34b65">
+    </UnitTestResult>
+    <UnitTestResult executionId="6d7512b9-a685-47a6-97c1-bec804a94c36" testId="0a7b2002-5633-2f53-1cd5-60fba099851c" testName="PersonListTest" computerName="SRIPAL-G-W7" duration="00:00:00.0009852" startTime="2014-11-26T11:43:37.6744669-05:00" endTime="2014-11-26T11:43:37.6794672-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d7512b9-a685-47a6-97c1-bec804a94c36">
+    </UnitTestResult>
+    <UnitTestResult executionId="b7fb87b4-54f0-469c-84f3-84545a9d6552" testId="a81ae60f-a68b-b4f4-6f26-5ed7381f35af" testName="PersonListViewModelConstructorTest" computerName="SRIPAL-G-W7" duration="00:00:00.0007792" startTime="2014-11-26T11:43:37.6834674-05:00" endTime="2014-11-26T11:43:37.6854675-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b7fb87b4-54f0-469c-84f3-84545a9d6552">
+    </UnitTestResult>
+    <UnitTestResult executionId="db6189ae-7c1f-4dd6-81ca-5abdb3e639d0" testId="620291c7-78ee-8e74-416b-74c59b2162d4" testName="PersonToStringConverterConstructorTest" computerName="SRIPAL-G-W7" duration="00:00:00.0001569" startTime="2014-11-26T11:43:37.6894677-05:00" endTime="2014-11-26T11:43:37.6914679-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db6189ae-7c1f-4dd6-81ca-5abdb3e639d0">
+    </UnitTestResult>
+    <UnitTestResult executionId="209969a8-6b5a-4847-9ad0-b36dabc1ed85" testId="866688d4-5770-6f22-26d0-712df3eec5b0" testName="PopulateDefaultPersonListTest" computerName="SRIPAL-G-W7" duration="00:00:00.0004656" startTime="2014-11-26T11:43:37.7014684-05:00" endTime="2014-11-26T11:43:37.7044686-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="209969a8-6b5a-4847-9ad0-b36dabc1ed85">
+    </UnitTestResult>
+  </Results>
+</TestRun>

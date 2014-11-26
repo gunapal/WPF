@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="40c07a99-4b11-4bb8-9a2c-50fbd6a85ebe" name="gsripal@SRIPAL-G-W7 2014-11-26 09:43:12" runUser="CORPORATE\gsripal" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="254e4c12-8a4e-4f54-8391-25b3cfea1562">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gsripal_SRIPAL-G-W7 2014-11-26 09_43_12">
+      <DeploymentItem filename="c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\WpfAssignment\bin\Debug\WpfAssignment.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-26T09:43:12.3922044-05:00" queuing="2014-11-26T09:43:12.8412301-05:00" start="2014-11-26T09:43:12.8512306-05:00" finish="2014-11-26T09:43:13.1152457-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ConvertTest_PersonObject_SuccessfulConversion" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="97e22287-2d5d-d5ed-2148-2764eacc1d78">
+      <Description>Person object input, returns a string concatinating name and age.</Description>
+      <Execution id="80e15b20-fed5-479c-8821-9023569f5fc0" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonToStringConverterTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertTest_PersonObject_SuccessfulConversion" />
+    </UnitTest>
+    <UnitTest name="ConvertTest_NullInput_EmptyString" storage="c:\users\gsripal\documents\visual studio 2010\projects\wpfassignment\unittests\bin\debug\unittests.dll" id="3d1d830b-9007-d680-a1d0-9c6683fccf85">
+      <Description>Person object null, should return empty string</Description>
+      <Execution id="3b91dd68-0f19-44ec-bd6c-af40f985850f" />
+      <TestMethod codeBase="c:/users/gsripal/documents/visual studio 2010/Projects/WpfAssignment/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.PersonToStringConverterTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertTest_NullInput_EmptyString" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3d1d830b-9007-d680-a1d0-9c6683fccf85" executionId="3b91dd68-0f19-44ec-bd6c-af40f985850f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97e22287-2d5d-d5ed-2148-2764eacc1d78" executionId="80e15b20-fed5-479c-8821-9023569f5fc0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3b91dd68-0f19-44ec-bd6c-af40f985850f" testId="3d1d830b-9007-d680-a1d0-9c6683fccf85" testName="ConvertTest_NullInput_EmptyString" computerName="SRIPAL-G-W7" duration="00:00:00.0199244" startTime="2014-11-26T09:43:12.8912329-05:00" endTime="2014-11-26T09:43:13.0552423-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b91dd68-0f19-44ec-bd6c-af40f985850f">
+    </UnitTestResult>
+    <UnitTestResult executionId="80e15b20-fed5-479c-8821-9023569f5fc0" testId="97e22287-2d5d-d5ed-2148-2764eacc1d78" testName="ConvertTest_PersonObject_SuccessfulConversion" computerName="SRIPAL-G-W7" duration="00:00:00.0008552" startTime="2014-11-26T09:43:13.0562424-05:00" endTime="2014-11-26T09:43:13.0602426-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80e15b20-fed5-479c-8821-9023569f5fc0">
+    </UnitTestResult>
+  </Results>
+</TestRun>

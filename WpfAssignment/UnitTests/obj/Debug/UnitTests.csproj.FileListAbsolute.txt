@@ -1,0 +1,9 @@
+c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\UnitTests\bin\Debug\UnitTests.dll
+c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\UnitTests\bin\Debug\WpfAssignment.exe
+c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\UnitTests\bin\Debug\WpfAssignment_Accessor.exe
+c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\UnitTests\bin\Debug\WpfAssignment.pdb
+c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\UnitTests\bin\Debug\WpfAssignment_Accessor.pdb
+c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\UnitTests\obj\Debug\UnitTests.dll
+c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\UnitTests\obj\Debug\UnitTests.pdb
+c:\users\gsripal\documents\visual studio 2010\Projects\WpfAssignment\UnitTests\bin\Debug\UnitTests.pdb
